@@ -1,0 +1,67 @@
+.Panel{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+}
+
+.StatPanel{
+    -fx-background-color: linear-gradient(to bottom right, #3f4f9f, #7895b4);
+    -fx-background-radius: 20;
+}
+
+.SidePanel{
+    -fx-background-color: linear-gradient(to bottom right, #27343d, #8db1d9);
+    -fx-background-radius: 20;
+}
+
+.Title{
+    -fx-font-size: 36;
+    -fx-font-style: italic;
+    -fx-font-family: "Script MT Bold";
+    -fx-progress-color: #121930;
+}
+
+.Text{
+    -fx-font-size: 22;
+    -fx-progress-color: #ffffff;
+}
+
+.TextField{
+    -fx-font-size: 22;
+    -fx-background-color: linear-gradient(to bottom right, #3f4f9f, #7895b4);
+    -fx-background-radius: 20;
+}
+
+.HighPane{
+    -fx-background-color: #415469;
+}
+
+.DeleteButton{
+    -fx-background-color: linear-gradient(to bottom right, #852e2c, #fd6161);
+    -fx-background-radius: 20;
+}
+
+.table-view{
+    -fx-background-color: linear-gradient(to bottom right, #3f4f9f, #7895b4);
+    -fx-border-color:linear-gradient(to bottom right, #3f4f9f, #7895b4);
+    -fx-border-radius:8px;
+    -fx-padding:0px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #3f4f9f, #7895b4);
+}
+
+.table-view .table-column-header {
+    -fx-background-color: linear-gradient(to bottom right, #3f4f9f, #7895b4);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.table-view .table-column-header .filler {
+    -fx-background-color: linear-gradient(to bottom right, #3f4f9f, #7895b4);
+}
+
+.table-view .table-column {
+    -fx-border-color: transparent;
+    -fx-alignment:CENTER;
+}

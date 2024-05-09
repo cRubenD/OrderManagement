@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="startPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="811.0" styleClass="Panel" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.WindowController">
+   <children>
+      <Label layoutX="270.0" layoutY="21.0" prefHeight="48.0" prefWidth="491.0" styleClass="Title" stylesheets="@Stylesheet.css" text="Orders Management Application" />
+      <AnchorPane prefHeight="528.0" prefWidth="179.0" styleClass="SidePanel" stylesheets="@Stylesheet.css">
+         <children>
+            <Label fx:id="dashboard" layoutX="52.0" layoutY="63.0" prefHeight="39.0" prefWidth="163.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Dashboard" textAlignment="CENTER" />
+            <Separator layoutX="13.0" layoutY="102.0" prefWidth="200.0" />
+            <ImageView fx:id="closeBtn" fitHeight="38.0" fitWidth="48.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@rectangle-xmark.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="149.0" prefHeight="67.0" prefWidth="225.0" styleClass="HighPane">
+               <children>
+                  <ImageView fx:id="homeImg" fitHeight="48.0" fitWidth="48.0" layoutX="27.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@house-chimney.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="homeLabel" layoutX="103.0" layoutY="15.0" prefHeight="39.0" prefWidth="96.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Home" />
+               </children>
+            </Pane>
+            <Pane layoutX="-3.0" layoutY="216.0" prefHeight="67.0" prefWidth="228.0">
+               <children>
+                  <ImageView fx:id="clientImg" fitHeight="48.0" fitWidth="48.0" layoutX="27.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="clientsLabel" layoutX="108.0" layoutY="15.0" prefHeight="39.0" prefWidth="96.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Clients" />
+               </children>
+            </Pane>
+            <Pane layoutX="-3.0" layoutY="283.0" prefHeight="67.0" prefWidth="228.0">
+               <children>
+                  <ImageView fx:id="productImg" fitHeight="48.0" fitWidth="48.0" layoutX="27.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@box-open.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="productsLabel" layoutX="97.0" layoutY="14.0" prefHeight="40.0" prefWidth="96.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Products" />
+               </children>
+            </Pane>
+            <Pane layoutY="350.0" prefHeight="67.0" prefWidth="225.0">
+               <children>
+                  <ImageView fx:id="orderImg" fitHeight="48.0" fitWidth="48.0" layoutX="26.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@dolly-flatbed.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="ordersLabel" layoutX="99.0" layoutY="14.0" prefHeight="40.0" prefWidth="96.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Orders" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="259.0" layoutY="129.0" prefHeight="155.0" prefWidth="234.0" styleClass="StatPanel">
+         <children>
+            <ImageView fx:id="clientImg1" fitHeight="48.0" fitWidth="48.0" layoutX="28.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@customer-care.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="clientsLabel1" layoutX="97.0" layoutY="12.0" prefHeight="85.0" prefWidth="102.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Total clients:" textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="totalClients" layoutX="124.0" layoutY="97.0" prefHeight="31.0" prefWidth="48.0" styleClass="TextField" stylesheets="@Stylesheet.css" />
+         </children>
+      </Pane>
+      <Pane layoutX="527.0" layoutY="206.0" prefHeight="155.0" prefWidth="234.0" styleClass="StatPanel">
+         <children>
+            <ImageView fx:id="clientImg11" fitHeight="48.0" fitWidth="48.0" layoutX="28.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@boxes.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="clientsLabel11" layoutX="97.0" layoutY="12.0" prefHeight="85.0" prefWidth="102.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Total products:" textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="totalProducts" layoutX="124.0" layoutY="97.0" prefHeight="31.0" prefWidth="48.0" styleClass="TextField" stylesheets="@Stylesheet.css" />
+         </children>
+      </Pane>
+      <Pane layoutX="259.0" layoutY="340.0" prefHeight="155.0" prefWidth="234.0" styleClass="StatPanel">
+         <children>
+            <ImageView fx:id="clientImg111" fitHeight="48.0" fitWidth="48.0" layoutX="28.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@list.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="clientsLabel111" layoutX="97.0" layoutY="12.0" prefHeight="85.0" prefWidth="102.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Total orders:" textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="totalOrders" layoutX="124.0" layoutY="97.0" prefHeight="31.0" prefWidth="48.0" styleClass="TextField" stylesheets="@Stylesheet.css" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
